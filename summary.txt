@@ -1,0 +1,26 @@
+Kieraj Mumick
+Igor Pogorelskiy
+
+README Final Project: Pitbull Number Generator
+
+This project takes the concept of a Paul Erdos number and the modern Kevin Bacon number and adapts 
+it to figure out a "number" for Pitbull, the artist, since he is featured in a lot of
+songs by various actors and actresses. This project is solely an implementation based project,
+using the Spotify API with url/xml parsing, which scraped spotify for the album artist, songs, 
+and featured artists. After getting all of the data and setting up the network, we used BFS 
+to bubble out from each artist's songs to find any featured artists, and kept going until a match to 
+Pitbull was found. In the case that a match was not found, the program would continue to scrape the 
+spotify database, consecutively looking for further levels of connectedness. 
+
+Kieraj worked on constructing the network from Spotify's API, as well as GUI design.
+Igor worked on the documentation and the implementation of BFS for the desired network.
+
+There was a great tradeoff between efficiency and accuracy of the Pitbull Number. Since the only way
+to calculate the number is to scrape the entire database of artists ands songs until Pitbull is found, 
+the running time of the program is a bit lengthy, but it will eventually return the correct answer. 
+We toyed around with the possibility of scraping less albums to increase the speed of the program,
+but ultimately, Spotify's API was made in such a way that this made the program 
+extremely inaccurate. Thus, we stuck with accuracy over efficiency. 
+
+The user manual is attached in a separate document with screenshots of the finished product. This document
+is titled 'Pitbull_Number.docx' and is located in this directory.

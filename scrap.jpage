@@ -1,0 +1,2 @@
+System.out.println(new String("String") == new String("String"));
+System.out.println("String" == "String");
